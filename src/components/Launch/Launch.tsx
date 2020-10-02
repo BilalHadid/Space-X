@@ -17,7 +17,7 @@ const Launch: React.FC<Props> = ({ data }) => {
               !!Launch && (
                 <li className="LaunchItems">
                   {Launch.mission_name} - {Launch.launch_year}(
-                  {JSON.stringify(Launch.launch_success)}){Launch.flight_number}
+                  {JSON.stringify(Launch.launch_success)})
                 </li>
               )
           )}
