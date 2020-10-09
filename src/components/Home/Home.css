@@ -1,9 +1,14 @@
 .Home {
-  background-image: url(../../assets/Images/space-x-image.jpg);
-  /* background-attachment: fixed;
-  background-position: center; */
+  background-image: url(https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2020/06/shutterstock_1704790183.jpg);
+  /* background-attachment: fixed; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  margin-top: -25px;
+  height: 101vh;
   width: 100%;
+  color: white;
+}
+.leftbar {
+  background-color: aquamarine;
 }
