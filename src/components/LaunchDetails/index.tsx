@@ -9,7 +9,25 @@ const LaunchDetailsContainer = () => {
     variables: { id: id },
   });
   if (loading) {
-    return <div>loading work</div>;
+    return (
+      <div className="parentLoader">
+        <div className="loader">
+          {/* <img
+          src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif"
+          alt=""
+          style={{
+            height: "50vh",
+            width: "30%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginLeft: "30%",
+            marginRight: "30%",
+          }}
+        /> */}
+        </div>
+      </div>
+    );
   }
   if (error) {
     return <div>Give some Error</div>;

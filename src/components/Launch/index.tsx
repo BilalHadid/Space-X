@@ -4,7 +4,12 @@ import Launch from "./Launch";
 
 const LaunchContainer = () => {
   const { loading, error, data } = useLaunchesQuery();
-  if (loading) return <div>It's Loading</div>;
+  if (loading)
+    return (
+      <div className="parentLoader">
+        <div className="loader"></div>
+      </div>
+    );
   if (error || !data) {
     return <div>There was an error</div>;
   }
