@@ -1,12 +1,12 @@
 .Home {
-  background-image: url(https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2020/06/shutterstock_1704790183.jpg);
+  /* background-image: url(https://spaceplace.nasa.gov/meteor-shower/en/meteor-shower.en.gif); */
   /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -25px;
-  height: 101vh;
-  width: 100%;
+  /* height: 51vh;
+  width: 100%; */
   color: white;
 }
 .leftbar {

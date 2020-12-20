@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ApolloProvider, InMemoryCache, ApolloClient } from "@apollo/client";
-
+import { BrowserRouter as Router } from "react-router-dom";
 const client = new ApolloClient({
   uri: "https://spacexdata.herokuapp.com/graphql",
   cache: new InMemoryCache(),
@@ -13,7 +13,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")

@@ -1,10 +1,12 @@
 import React from "react";
 import { useLaunchInfoQuery } from "../../generated/graphql";
 import Launchdetail from "./Launchdetail";
+import { useParams } from "react-router-dom";
 
 const LaunchDetailsContainer = () => {
+  let { id } = useParams();
   const { loading, error, data } = useLaunchInfoQuery({
-    variables: { id: "13" },
+    variables: { id: id },
   });
   if (loading) {
     return <div>loading work</div>;

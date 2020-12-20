@@ -7,6 +7,8 @@ export const Query_launch = gql`
       mission_name
       launch_year
       launch_success
+      details
+      launch_date_local
     }
   }
 `;
